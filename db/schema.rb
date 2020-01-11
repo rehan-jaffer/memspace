@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_10_163449) do
+ActiveRecord::Schema.define(version: 2020_01_10_171726) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "cards", force: :cascade do |t|
     t.string "front", null: false
@@ -33,9 +36,10 @@ ActiveRecord::Schema.define(version: 2020_01_10_163449) do
     t.integer "user_id", null: false
     t.decimal "e_factor", default: "2.5", null: false
     t.date "last_review", null: false
-    t.date "days_till_next", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "reviews", default: 0, null: false
+    t.integer "days_till_next", default: 0, null: false
     t.index ["card_id"], name: "index_repetitions_on_card_id"
   end
 

@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/rehan-jaffer/sm2.git
+  revision: 3e0c1c34e59e81e473436739c4e870b78fe47750
+  specs:
+    Sm2 (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -239,6 +245,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  Sm2 (~> 0.1.0)!
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
