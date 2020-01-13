@@ -13,6 +13,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
+gem 'devise-jwt'
+gem 'dotenv-rails'
 gem 'Sm2', '~> 0.1.0', git: "git://github.com/rehan-jaffer/sm2.git"
 
 group :development, :test do
