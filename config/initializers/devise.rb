@@ -276,4 +276,6 @@ Devise.setup do |config|
     jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
   end
 
+  config.navigational_formats = []
+
 end
